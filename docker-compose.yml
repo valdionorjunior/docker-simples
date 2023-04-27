@@ -1,1 +1,11 @@
+version: '3.7'
+
+services:
+  meuapache:
+    image: httpd:latest
+    container_name: my-app-apache
+    ports:
+      - "8081:80"
+    volumes:
+      - ./website:/usr/local/apache2/htdocs
 
